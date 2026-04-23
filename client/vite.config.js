@@ -44,11 +44,7 @@ export default defineConfig({
       },
     },
     plugins: [
-      babel({
-        plugins: [
-          ['@babel/plugin-transform-runtime'],
-        ],
-      }),
+      babel(),
     ],
   },
 });
