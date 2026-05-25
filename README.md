@@ -170,8 +170,6 @@ class InitialMigration(Migration):
 
 * `make lint-server`
 
-* Try to keep line width under 120 characters.
-
 * Use [formatted string literals](https://www.python.org/dev/peps/pep-0498/) for string formatting.
 
 * Use [Type Hints](https://www.python.org/dev/peps/pep-0484/) whenever possible.

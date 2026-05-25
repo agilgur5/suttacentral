@@ -56,6 +56,9 @@ ignore_unused = [
     "uwsgi", # used as CLI in `Makefile`, `entrypoint.sh`
 ]
 
+[tool.ruff]
+line-length = 120
+
 [tool.ruff.lint]
 # add to the default lint rules
 extend-select = [
