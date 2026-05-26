@@ -63,8 +63,27 @@ line-length = 120
 # add to the default lint rules
 extend-select = [
     "A", # no shadowing built-ins
+    # "ARG", # unused arguments
+    # "B", # bugbear
+    # "C901", # McCabe complexity
+    # "EXE", # check shebangs
+    # "I", # isort
+    # "N", # pep8 naming
+    # "PERF", # check list & dict performance
+    # "PT", # pytest style
+    # "PTH", # use pathlib
+    # "RET", # return style
+    # "RUF", # ruff-specific rules
+    # "S", # bandit security
+    # "TID", # tidy imports
     "T100", # no debugger statements
 ]
+flake8-tidy-imports = {
+    ban-relative-imports = "all" # no relative imports
+}
+per-file-ignores = {
+    "tests/**.py" = ["S101"] # ignore assert usage in tests
+}
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
